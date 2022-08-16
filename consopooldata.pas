@@ -1682,6 +1682,10 @@ If success then
       begin
       ToLog(',Besthash submited: '+BestHashReadeable(Data.Diff),uToFile);
       Inc(SESSION_BestHashes);
+      end
+   else
+      begin
+      ToLog(' Submited solution got a report: '+ErrorCode,uToFile);
       end;
    end
 else
